@@ -8,8 +8,14 @@
 <title><s:text name="succPage"/></title>
 </head>
 <body>
-	<s:text name="succTip">
+	<!--<s:text name="succTip">
+	本站访问次数为：${applicationScope.counter}<br/>
 	<s:param>${sessionScope.user}</s:param>
-	</s:text><br/>
+	${requestScope.tip}<br/>
+	</s:text><br/>-->
+	本站访问次数为：${applicationScope.counter}<br/>
+	${sessionScope.user}<br/>
+	${requestScope.tip}<br/>
+	${cookie.user.value}<br/>
 </body>
 </html>

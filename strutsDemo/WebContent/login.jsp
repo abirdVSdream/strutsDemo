@@ -12,6 +12,17 @@
 	<s:textfield name="username" key="user"/>
 	<s:textfield name="password" key="pass"/>
 	<s:submit key="login"/>
+	<!--<s:submit key="regist" action="regist"/>-->
+	<input type="submit" value="注册" onclick="regist();"/> 
 </s:form>
+
+
+<script type="text/javascript">
+function regist()
+{
+	targetFrom = document.forms[0];
+	targetFrom.action = "regist";
+}
+</script>
 </body>
 </html>

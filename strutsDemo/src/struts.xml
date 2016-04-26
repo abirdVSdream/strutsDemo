@@ -14,5 +14,10 @@
 			<result name="error">/error.jsp</result>
 			<result name="success">/welcome.jsp</result>
 		</action>
+		<action name="regist" class="org.cai.app.action.LoginAction" method="regist">
+			<result name="input">/login.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="success">/welcome.jsp</result>
+		</action>
 	</package>
 </struts>
