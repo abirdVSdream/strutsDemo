@@ -12,12 +12,16 @@
 		<action name="login" class="org.cai.app.action.LoginAction">
 			<result name="input">/login.jsp</result>
 			<result name="error">/error.jsp</result>
-			<result name="success">/welcome.jsp</result>
+			<result name="success">/welcome.jsp</result> 
+			<!-- <result name="success" type="redirect">/welcome.jsp</result>-->
 		</action>
 		<action name="regist" class="org.cai.app.action.LoginAction" method="regist">
 			<result name="input">/login.jsp</result>
 			<result name="error">/error.jsp</result>
 			<result name="success">/welcome.jsp</result>
+		</action>
+		<action name="redirect" class="org.cai.app.action.RedirectAction">
+			<result name="success">/${username}.jsp</result>
 		</action>
 	</package>
 </struts>

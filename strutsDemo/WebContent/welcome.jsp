@@ -16,6 +16,10 @@
 	本站访问次数为：${applicationScope.counter}<br/>
 	${sessionScope.user}<br/>
 	${requestScope.tip}<br/>
+	<s:text name="succTip">
+		<s:param><s:property value="username"/></s:param>
+	</s:text>
 	${cookie.user.value}<br/>
+	<s:debug/>
 </body>
 </html>

@@ -77,12 +77,12 @@ public class LoginAction extends ActionSupport {
 //			response.addCookie(c);
 			//response.getWriter().append(c.getDomain());
 			//ServletActionContext.getResponse().addCookie(c);
-			ctx.put("tip", "服务器提示：您已经成功登录");
+			ctx.put("tip", getText("succTip",new String[]{getUsername()}));
 			return SUCCESS;
 		}
 		else
 		{
-			ctx.put("tip", "服务器提示：登录失败");
+			ctx.put("tip", getText("failTip",new String[]{getUsername()}));
 			return ERROR;
 		}
 	}

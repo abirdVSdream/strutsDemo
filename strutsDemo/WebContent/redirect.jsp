@@ -5,10 +5,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title><s:text name="errorPage"></s:text></title>
+<title><s:text name="loginPage"/></title>
 </head>
 <body>
-	<s:text name="failTip"/>
-	<s:property value="exception.message"/>
+<s:form action="redirect">
+	<s:textfield name="username" key="user"/>
+	<s:submit key="login"/>
+</s:form>
+
+
+<script type="text/javascript">
+function regist()
+{
+	targetFrom = document.forms[0];
+	targetFrom.action = "regist";
+}
+</script>
 </body>
 </html>
